@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<TextView android:text="Id" android:id="@+id/TV_IdMat"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+</TextView>
+
+<TextView android:text="Dtae début" android:id="@+id/TV_DateDebut"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal">
+</TextView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/uu"
+        android:id="@+id/imageButton"
+        android:layout_gravity="right" />
+
+    <TextView android:text="Nom Prof" android:id="@+id/TV_Nprof"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+</TextView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ff"
+        android:id="@+id/imageButton2"
+        android:layout_gravity="right" />
+
+    <TextView android:text="Date fin" android:id="@+id/TV_DateFin"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal">
+</TextView>
+
+    <TextView android:text="Nom Mat" android:id="@+id/TV_NomMat"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+</TextView>
+</LinearLayout>
+

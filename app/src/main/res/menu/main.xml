@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.student_agenda.app.MainActivity" >
+    
+    <item android:id="@+id/Matiere_settings"
+        android:title="@string/Matiere_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/Salle_settings"
+        android:title="@string/Salle_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/A_propos"
+        android:title="@string/A_propos"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+</menu>

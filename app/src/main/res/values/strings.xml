@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Student_Agenda</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Matiere_settings">Editer Matiere</string>
+    <string name="Salle_settings">Editer Salle</string>
+    <string name="A_propos">A propos</string>
+    <string name="title_activity_salle_">Salle_Activity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_apropos">AproposActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_confirm">ConfirmActivity</string>
+    <string name="title_activity_etudiant">EtudiantActivity</string>
+    <string name="title_activity_bienvenu">Bienvenu</string>
+    <string name="title_activity_tlist">Tlist</string>
+    <string name="title_activity_liste_salles">ListeSalles</string>
+    <string name="title_activity_liste_matieres">ListeMatieres</string>
+    <string name="title_activity_liste_mat_adapter">ListeMatAdapter</string>
+
+</resources>

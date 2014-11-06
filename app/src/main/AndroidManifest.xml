@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.student_agenda.app" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_im"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.student_agenda.app.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.student_agenda.app.Matiere_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student_agenda.app.Salle_Activity"
+            android:label="@string/title_activity_salle_" >
+        </activity>
+        <activity
+            android:name="com.example.student_agenda.app.AproposActivity"
+            android:label="@string/title_activity_apropos" >
+        </activity>
+        <activity
+            android:name="com.example.student_agenda.app.ListeSalles"
+            android:label="@string/title_activity_liste_salles" >
+        </activity>
+        <activity
+            android:name="com.example.student_agenda.app.ListeMatieres"
+            android:label="@string/title_activity_liste_matieres" >
+        </activity>
+    </application>
+
+</manifest>

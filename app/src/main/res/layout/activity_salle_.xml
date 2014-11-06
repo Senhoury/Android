@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.student_agenda.app.Salle_Activity">
+
+    <TextView
+        android:text=" settings of classrooms "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_Bat"
+        android:hint="Batiment"
+        android:layout_below="@+id/et_numS"
+        android:layout_alignLeft="@+id/et_numS"
+        android:layout_alignStart="@+id/et_numS" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AvecClimatisation"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_below="@+id/et_ef"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AvecProjecteur"
+        android:id="@+id/checkBox2"
+        android:checked="false"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/et_Bat"
+        android:layout_alignStart="@+id/et_Bat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enroll"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/button4"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/button2"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_toRightOf="@+id/checkBox2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:id="@+id/button4"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="5"
+        android:id="@+id/et_numS"
+        android:hint="Num Salle"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="5"
+        android:id="@+id/et_ef"
+        android:hint="Effectif"
+        android:layout_below="@+id/et_Bat"
+        android:layout_alignLeft="@+id/et_Bat"
+        android:layout_alignStart="@+id/et_Bat" />
+
+</RelativeLayout>

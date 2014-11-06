@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.student_agenda.app.Matiere_Activity">
+
+    <TextView
+        android:text="course planning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/et_nomM"
+        android:hint="Matière"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+                />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name Prof"
+        android:ems="10"
+        android:id="@+id/et_prof"
+        android:layout_below="@+id/et_nomM"
+        android:layout_alignLeft="@+id/et_nomM"
+        android:layout_alignStart="@+id/et_nomM" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et_NumSalle"
+        android:hint="Num Salle"
+        android:layout_below="@+id/et_prof"
+        android:layout_alignLeft="@+id/et_prof"
+        android:layout_alignStart="@+id/et_prof" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_dd"
+        android:inputType="date"
+        android:layout_below="@+id/et_NumSalle"
+        android:layout_alignLeft="@+id/et_NumSalle"
+        android:layout_alignStart="@+id/et_NumSalle"
+        android:hint="Date début"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:editable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/et_df"
+        android:layout_below="@+id/et_dd"
+        android:layout_alignLeft="@+id/et_dd"
+        android:layout_alignStart="@+id/et_dd"
+        android:hint="Date Fin"
+        android:layout_alignRight="@+id/et_hd"
+        android:layout_alignEnd="@+id/et_hd"
+        android:editable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/et_hd"
+        android:layout_below="@+id/et_df"
+        android:layout_alignLeft="@+id/et_prof"
+        android:layout_alignStart="@+id/et_prof"
+        android:hint="Heure début" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/et_dc"
+        android:hint="Durée du cours"
+        android:layout_below="@+id/et_hd"
+        android:layout_alignLeft="@+id/et_hd"
+        android:layout_alignStart="@+id/et_hd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enroll"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:id="@+id/button3"
+        android:layout_below="@+id/et_numM"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et_numM"
+        android:hint="Id Matière"
+        android:layout_below="@+id/et_dc"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lister"
+        android:id="@+id/button4"
+        android:layout_below="@+id/et_numM"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/zz"
+        android:layout_alignTop="@+id/et_df"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/zz"
+        android:layout_alignTop="@+id/et_dd"
+        android:layout_toRightOf="@+id/et_NumSalle" />
+
+</RelativeLayout>
